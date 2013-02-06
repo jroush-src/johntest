@@ -70,6 +70,48 @@ namespace LightSwitchApplication.Implementation
         }
         private string _Name;
         
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string email
+        {
+            get
+            {
+                return this._email;
+            }
+            set
+            {
+                if (this._email != value)
+                {
+                    this.RaiseDataMemberChanging("email");
+                    this.ValidateProperty("email", value);
+                    this._email = value;
+                    this.RaiseDataMemberChanged("email");
+                }
+            }
+        }
+        private string _email;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string City
+        {
+            get
+            {
+                return this._City;
+            }
+            set
+            {
+                if (this._City != value)
+                {
+                    this.RaiseDataMemberChanging("City");
+                    this.ValidateProperty("City", value);
+                    this._City = value;
+                    this.RaiseDataMemberChanged("City");
+                }
+            }
+        }
+        private string _City;
+        
         #region IEntityImplementation Members
         private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
         

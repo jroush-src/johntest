@@ -6,6 +6,8 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
     <Property Name="Name" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
   </EntityType>
   <EntityContainer Name="ApplicationDataObjectContext">
     <EntitySet Name="Employees" EntityType="ApplicationData.Employee" />

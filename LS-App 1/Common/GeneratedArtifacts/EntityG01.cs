@@ -126,6 +126,54 @@ namespace LightSwitchApplication
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void Name_Changed();
 
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string email
+        {
+            get
+            {
+                return global::LightSwitchApplication.Employee.DetailsClass.GetValue(this, global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties.email);
+            }
+            set
+            {
+                global::LightSwitchApplication.Employee.DetailsClass.SetValue(this, global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties.email, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void email_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void email_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void email_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string City
+        {
+            get
+            {
+                return global::LightSwitchApplication.Employee.DetailsClass.GetValue(this, global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties.City);
+            }
+            set
+            {
+                global::LightSwitchApplication.Employee.DetailsClass.SetValue(this, global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties.City, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void City_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void City_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void City_Changed();
+
         #endregion
     
         #region Details Class
@@ -224,6 +272,22 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string> email
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties.email) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string> City
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties.City) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>;
+                    }
+                }
+                
             }
     
             #pragma warning disable 109
@@ -232,6 +296,8 @@ namespace LightSwitchApplication
             {
                 new int Id { get; set; }
                 new string Name { get; set; }
+                new string email { get; set; }
+                new string City { get; set; }
             }
             #pragma warning restore 109
     
@@ -315,6 +381,80 @@ namespace LightSwitchApplication
                     e.Name_Changed();
                 }
     
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Entry
+                    email = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Entry(
+                        "email",
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._email_Stub,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._email_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._email_Validate,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._email_GetImplementationValue,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._email_SetImplementationValue,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._email_OnValueChanged);
+                private static void _email_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Employee.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Data> c, global::LightSwitchApplication.Employee.DetailsClass d, object sf)
+                {
+                    c(d, ref d._email, sf);
+                }
+                private static bool _email_ComputeIsReadOnly(global::LightSwitchApplication.Employee e)
+                {
+                    bool result = false;
+                    e.email_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _email_Validate(global::LightSwitchApplication.Employee e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.email_Validate(r);
+                }
+                private static string _email_GetImplementationValue(global::LightSwitchApplication.Employee.DetailsClass d)
+                {
+                    return d.ImplementationEntity.email;
+                }
+                private static void _email_SetImplementationValue(global::LightSwitchApplication.Employee.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.email = v;
+                }
+                private static void _email_OnValueChanged(global::LightSwitchApplication.Employee e)
+                {
+                    e.email_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Entry
+                    City = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Entry(
+                        "City",
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._City_Stub,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._City_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._City_Validate,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._City_GetImplementationValue,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._City_SetImplementationValue,
+                        global::LightSwitchApplication.Employee.DetailsClass.PropertySetProperties._City_OnValueChanged);
+                private static void _City_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Employee.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Data> c, global::LightSwitchApplication.Employee.DetailsClass d, object sf)
+                {
+                    c(d, ref d._City, sf);
+                }
+                private static bool _City_ComputeIsReadOnly(global::LightSwitchApplication.Employee e)
+                {
+                    bool result = false;
+                    e.City_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _City_Validate(global::LightSwitchApplication.Employee e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.City_Validate(r);
+                }
+                private static string _City_GetImplementationValue(global::LightSwitchApplication.Employee.DetailsClass d)
+                {
+                    return d.ImplementationEntity.City;
+                }
+                private static void _City_SetImplementationValue(global::LightSwitchApplication.Employee.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.City = v;
+                }
+                private static void _City_OnValueChanged(global::LightSwitchApplication.Employee e)
+                {
+                    e.City_Changed();
+                }
+    
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -322,6 +462,12 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Data _Name;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Data _email;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Employee, global::LightSwitchApplication.Employee.DetailsClass, string>.Data _City;
             
         }
     
