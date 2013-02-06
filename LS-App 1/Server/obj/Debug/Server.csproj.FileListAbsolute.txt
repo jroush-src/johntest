@@ -1,0 +1,8 @@
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\bin\Debug\Application.Server.dll.config
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\bin\Debug\Application.Server.dll
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\bin\Debug\Application.Server.pdb
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\bin\Debug\Application.Common.dll
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\obj\Debug\Application.Server.dll
+C:\Users\John\Documents\GitHub\johntest\LS-App 1\Server\obj\Debug\Application.Server.pdb
