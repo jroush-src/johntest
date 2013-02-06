@@ -346,17 +346,6 @@
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
               </ContentItem>
-              <ContentItem DataType="Microsoft.LightSwitch.Extensions:EmailAddress"
-                           Kind="Value"
-                           Name="email">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="Employee/Properties[email]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
               <ContentItem DataType=":String"
                            Kind="Value"
                            Name="City">
@@ -364,6 +353,17 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <MemberExpression Member="Employee/Properties[City]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType="Microsoft.LightSwitch.Extensions:EmailAddress"
+                           Kind="Value"
+                           Name="email">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="Employee/Properties[email]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
